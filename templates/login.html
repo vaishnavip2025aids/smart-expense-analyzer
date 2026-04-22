@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - Smart Expense Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        /* Center container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        /* Glass card */
+        .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 320px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Inputs */
+        .login-box input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        /* Button */
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #00c9a7;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-box button:hover {
+            background: #00a98f;
+            transform: scale(1.05);
+        }
+
+        /* Register link */
+        .login-box a {
+            display: block;
+            margin-top: 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            color: #00c9a7;
+        }
+
+        /* Title */
+        .app-title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="app-title">💰 Smart Expense Analyzer</div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <form method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <a href="/register">Don't have an account? Register</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

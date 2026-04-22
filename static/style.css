@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* Cards */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.income {
+    border-left: 5px solid #2ecc71;
+}
+
+.expense {
+    border-left: 5px solid #e74c3c;
+}
+
+.balance {
+    border-left: 5px solid #3498db;
+}
+
+.warning {
+    color: red;
+}
+
+/* Form */
+input,
+select {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #00c9a7;
+    border: none;
+    color: white;
+}
+
+canvas {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+}
+
+/* Table */
+table {
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+th,
+td {
+    padding: 10px;
+}
